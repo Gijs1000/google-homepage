@@ -8,16 +8,20 @@ ul {
     padding: 5px;
 }
 
-li.header-list {
-    display: block;
+li {
     float: right;
     padding: 5px;
-
 }
 
-li.footer-list-left {
-    display: block;
-    float: left;
+.blue-button {
+    position: relative;
+    background: #4285f4;
+    color: white;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 7px;
 }
 
 nav {
@@ -101,7 +105,7 @@ footer {
 
 #country-text {
     color: rgba(0,0,0,.54);
-    padding-left: 27px;
+    padding-left: 30px;
 }
 
 .footer-right {
