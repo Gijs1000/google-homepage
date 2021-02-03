@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>Google Clone</title>
+        <link rel="stylesheet" href="cssreset.css">
         <link rel="stylesheet" href="style.css">
     </head>
 </html>
@@ -10,40 +11,43 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="https://www.google.com/intl/nl/gmail/about/#">Gmail</a></li>
-            <li><a href="https://www.images.google.com">Afbeeldingen</a></li>
-            <li><a href="">Menu</a></li> <!---TO-DO: Change this to the 9 block image the Google uses.-->
-            <li><a href="https://accounts.google.com/ServiceLogin?hl=nl&passive=true&continue=https://www.google.com/&ec=GAZAAQ">
+            <li class="header-list"><a href="https://accounts.google.com/ServiceLogin?hl=nl&passive=true&continue=https://www.google.com/&ec=GAZAAQ">
                 <button class="blue-button" type="button">Inloggen</button></a></li>
+            <li class="header-list"><a href="">Menu</a></li> <!---TO-DO: Change this to the 9 block image the Google uses.-->
+            <li class="header-list"><a href="https://www.images.google.com">Afbeeldingen</a></li>
+            <li class="header-list"><a href="https://www.google.com/intl/nl/gmail/about/#">Gmail</a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <div>
+        <div id="image-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The logo of Google.">
         </div>
-        <div class="search-form">
+        <div id="search-form">
             <form>
-                <input type="text" class="search-bar"><br>
-                <button type="submit">Search</button>
-                <button type="submit">I'm feeling lucky!</button>
+                <input id="search-bar" type="text"/><br>
+                <div id="submit-buttons">
+                <button class="buttons" type="submit">Search</button>
+                <button class="buttons" type="submit">I'm feeling lucky!</button>
+                </div>
             </form>
         </div>
     </div>
 
-    <div class="footer" id="country-footer">
+    <div class="country">
         <p>Nederland</p>
     </div>
 
-    <div class="footer" id="info-on-bottom">
-        <a href="https://www.google.com/intl/nl_nl/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Adverteren</a>
-        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Bedrijf</a>
-        <a href="https://about.google/?utm_source=google-NL&utm_medium=referral&utm_campaign=hp-footer&fg=1">Over</a>
-        <a href="https://google.com/search/howsearchworks/?fg=1">Hoe Google zoeken werkt</a>
-
-        <a href="https://google.com/search/howsearchworks/?fg=1">Privacy</a>
-        <a href="https://google.com/search/howsearchworks/?fg=1">Voorwaarden</a>
-        <a href="https://google.com/search/howsearchworks/?fg=1">Instellingen</a>
+    <div class="footer">
+        <ul>
+            <li class="footer-list-left"><a href="https://www.google.com/intl/nl_nl/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Adverteren</a></li>
+            <li class="footer-list-left"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Bedrijf</a></li>
+            <li class="footer-list-left"><a href="https://about.google/?utm_source=google-NL&utm_medium=referral&utm_campaign=hp-footer&fg=1">Over</a></li>
+            <li class="footer-list-left"><a href="https://google.com/search/howsearchworks/?fg=1">Hoe Google zoeken werkt</a></li>
+            <li style="float: right"><a href="https://google.com/search/howsearchworks/?fg=1">Privacy</a></li>
+            <li style="float: right"><a href="https://google.com/search/howsearchworks/?fg=1">Voorwaarden</a></li>
+            <li style="float: right"><a href="https://google.com/search/howsearchworks/?fg=1">Instellingen</a></li>
+        </ul>
     </div>
 
 
